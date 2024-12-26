@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box; 
+}
+body{
+  background:bisque;
+}
+.main-container{
+  display:flex;
+  flex-direction:row;
+  align-items: center; 
+  justify-content:center;
+  
+}
+.parent-container{
+  width:500px;
+  height:350px;
+  background:hsl(0,0%,94%);
+  margin:300px;
+  position:relative;
+  border:2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.35) -50px -50px 36px -28px inset;
+}
+.new-container{
+  width:500px;
+  margin-top:120px; 
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center; 
+}
+h1,h2,p{
+  text-align:center;
+}
+h1{
+  font-size:50px;
+  font-family: "Lato", serif;
+}
+p{
+  font-size:24px;
+} 
+h2{
+  font-size:20px;
+  font-weight:lighter;
+}
+.labelcontainer{
+  display:block;
+  width:69px;
+  height:34px;
+  background:#ccc;
+  position:relative;
+  overflow:hidden;
+  margin:60px;
+}
+input[type="checkbox"]{
+  display:none;
+}
+.box{
+  width:31px;
+  height:28px;
+  position:absolute; 
+  top:3px;
+  left:3px;
+  z-index:1;
+  background:#fff;
+  transition:all 1s ease-out;
+} 
+h3{
+  font-size:29px;
+  font-family: "Lato", serif;
+  text-align:center;
+  font-weight:lighter;
+  font-style:normal; 
+}
+@media screen and (max-width:768px){
+  .new-container{
+    width:350px;
+    margin-top:120px;
+  }
+  h1{
+    text-align:left;
+    font-size:40px;
+  }
+  .parent-container{
+    margin:150px;
+  }
+}
